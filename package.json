@@ -1,0 +1,15 @@
+{
+  "name": "yashar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "dev": "npx tailwindcss-cli@latest build ./src/tailwind.css -c ./.config/tailwind.config.js -o ./dist/tailwind.css",
+    "build": "NODE_ENV=production npx tailwindcss-cli@latest build ./src/tailwind.css -c ./.config/tailwind.config.js -o ./dist/tailwind.css",
+    "start": "serve ./src"
+  },
+  "dependencies": {}
+}
